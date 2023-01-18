@@ -7,7 +7,9 @@ import SplashScreen from "react-native-splash-screen";
  */
 import Navigation from "./src/navigation";
 import { isAndroid } from "@freakycoder/react-native-helpers";
-
+import { Provider } from "react-redux";
+import { store, persistor } from "./src/redux/store";
+import { PersistGate } from "redux-persist/integration/react";
 LogBox.ignoreAllLogs();
 
 const App = () => {
@@ -28,7 +30,11 @@ const App = () => {
 
   return (
     <>
-      <Navigation />
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          <Navigation />
+        </PersistGate>
+      </Provider>
     </>
   );
 };

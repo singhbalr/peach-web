@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* RNTypescriptBoilerplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNTypescriptBoilerplateTests.m */; };
+		00E356F31AD99517003FC87E /* peachmobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* peachmobileTests.m */; };
 		023B5BBCCBA54AFEB2D78FF1 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96C4B979D4BB4E6D984CACAA /* Montserrat-ExtraLightItalic.ttf */; };
 		0A0CCDE47DBE4CC5B9A85F0D /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8EC498542214678879FCD2F /* Montserrat-Regular.ttf */; };
-		0C80B921A6F3F58F76C31292 /* libPods-RNTypescriptBoilerplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-RNTypescriptBoilerplate.a */; };
+		0C80B921A6F3F58F76C31292 /* libPods-peachmobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-peachmobile.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -20,7 +20,7 @@
 		38DDAADF7ADB4B90A3D24DB6 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8427C8EB1C784461B4ACAE26 /* Montserrat-SemiBoldItalic.ttf */; };
 		59EDAA8F714D4D2FA9A131BF /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DA8350E378A4182B0DA00A4 /* Montserrat-Bold.ttf */; };
 		60F360E929D34FD598688386 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5E43199F03C461397C03364 /* Montserrat-Light.ttf */; };
-		7699B88040F8A987B510C191 /* libPods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests.a */; };
+		7699B88040F8A987B510C191 /* libPods-peachmobile-peachmobileTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-peachmobile-peachmobileTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		9827501159E5411D9B2A78D7 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDBEA33FAFB247818A88F753 /* Montserrat-Italic.ttf */; };
 		982FEC52F02E4A8EB5B4C9EA /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0B3063B6A1C49F9A8C01E83 /* Montserrat-ExtraBoldItalic.ttf */; };
@@ -40,46 +40,46 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = RNTypescriptBoilerplate;
+			remoteInfo = peachmobile;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* RNTypescriptBoilerplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNTypescriptBoilerplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* peachmobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = peachmobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* RNTypescriptBoilerplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNTypescriptBoilerplateTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* RNTypescriptBoilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNTypescriptBoilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RNTypescriptBoilerplate/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = RNTypescriptBoilerplate/AppDelegate.mm; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RNTypescriptBoilerplate/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RNTypescriptBoilerplate/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RNTypescriptBoilerplate/main.m; sourceTree = "<group>"; };
-		1588EA3539B44A3698D9C91D /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ThinItalic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
-		180FB66E1F4848F58582ABCC /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-SemiBold.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2731E336E20F4D9B99F02F8A /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-BoldItalic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
-		3B4392A12AC88292D35C810B /* Pods-RNTypescriptBoilerplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNTypescriptBoilerplate.debug.xcconfig"; path = "Target Support Files/Pods-RNTypescriptBoilerplate/Pods-RNTypescriptBoilerplate.debug.xcconfig"; sourceTree = "<group>"; };
-		3DA8350E378A4182B0DA00A4 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
-		54608C581FB44DEA82C4C421 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraBold.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-RNTypescriptBoilerplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNTypescriptBoilerplate.release.xcconfig"; path = "Target Support Files/Pods-RNTypescriptBoilerplate/Pods-RNTypescriptBoilerplate.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests.debug.xcconfig"; path = "Target Support Files/Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests/Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-RNTypescriptBoilerplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNTypescriptBoilerplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RNTypescriptBoilerplate/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8427C8EB1C784461B4ACAE26 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-SemiBoldItalic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests.release.xcconfig"; path = "Target Support Files/Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests/Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests.release.xcconfig"; sourceTree = "<group>"; };
-		901B77D148804FE4AD07A664 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-BlackItalic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
-		96C4B979D4BB4E6D984CACAA /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraLightItalic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
-		A29FC310DE4C442A8B94E438 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Medium.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
-		B1A803B7CF6E4A5E9F696542 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-LightItalic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
-		B5E43199F03C461397C03364 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Light.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-Light.ttf"; sourceTree = "<group>"; };
-		B8EC498542214678879FCD2F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
-		CA1B23CC722249B2AB3DDB7B /* Montserrat-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Black.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-Black.ttf"; sourceTree = "<group>"; };
-		CD803775704E49AE915ECCBC /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraLight.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
-		D1316C1ADD2547A6922F5189 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-MediumItalic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
-		E0B3063B6A1C49F9A8C01E83 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* peachmobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = peachmobileTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* peachmobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = peachmobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = peachmobile/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = peachmobile/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = peachmobile/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = peachmobile/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = peachmobile/main.m; sourceTree = "<group>"; };
+		1588EA3539B44A3698D9C91D /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ThinItalic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		180FB66E1F4848F58582ABCC /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-SemiBold.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		19F6CBCC0A4E27FBF8BF4A61 /* libPods-peachmobile-peachmobileTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-peachmobile-peachmobileTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2731E336E20F4D9B99F02F8A /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-BoldItalic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		3B4392A12AC88292D35C810B /* Pods-peachmobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-peachmobile.debug.xcconfig"; path = "Target Support Files/Pods-peachmobile/Pods-peachmobile.debug.xcconfig"; sourceTree = "<group>"; };
+		3DA8350E378A4182B0DA00A4 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		54608C581FB44DEA82C4C421 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraBold.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-peachmobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-peachmobile.release.xcconfig"; path = "Target Support Files/Pods-peachmobile/Pods-peachmobile.release.xcconfig"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-peachmobile-peachmobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-peachmobile-peachmobileTests.debug.xcconfig"; path = "Target Support Files/Pods-peachmobile-peachmobileTests/Pods-peachmobile-peachmobileTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-peachmobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-peachmobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = peachmobile/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8427C8EB1C784461B4ACAE26 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-SemiBoldItalic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-peachmobile-peachmobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-peachmobile-peachmobileTests.release.xcconfig"; path = "Target Support Files/Pods-peachmobile-peachmobileTests/Pods-peachmobile-peachmobileTests.release.xcconfig"; sourceTree = "<group>"; };
+		901B77D148804FE4AD07A664 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-BlackItalic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		96C4B979D4BB4E6D984CACAA /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraLightItalic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		A29FC310DE4C442A8B94E438 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Medium.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		B1A803B7CF6E4A5E9F696542 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-LightItalic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		B5E43199F03C461397C03364 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Light.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		B8EC498542214678879FCD2F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		CA1B23CC722249B2AB3DDB7B /* Montserrat-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Black.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		CD803775704E49AE915ECCBC /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraLight.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		D1316C1ADD2547A6922F5189 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-MediumItalic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		E0B3063B6A1C49F9A8C01E83 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		FCB70C3B338B46FA87FEFCBF /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Thin.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-Thin.ttf"; sourceTree = "<group>"; };
-		FDBEA33FAFB247818A88F753 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Italic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		FCB70C3B338B46FA87FEFCBF /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Thin.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		FDBEA33FAFB247818A88F753 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Italic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-Italic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests.a in Frameworks */,
+				7699B88040F8A987B510C191 /* libPods-peachmobile-peachmobileTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,20 +95,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-RNTypescriptBoilerplate.a in Frameworks */,
+				0C80B921A6F3F58F76C31292 /* libPods-peachmobile.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* RNTypescriptBoilerplateTests */ = {
+		00E356EF1AD99517003FC87E /* peachmobileTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* RNTypescriptBoilerplateTests.m */,
+				00E356F21AD99517003FC87E /* peachmobileTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = RNTypescriptBoilerplateTests;
+			path = peachmobileTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -119,7 +119,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* RNTypescriptBoilerplate */ = {
+		13B07FAE1A68108700A75B9A /* peachmobile */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -129,15 +129,15 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = RNTypescriptBoilerplate;
+			name = peachmobile;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-RNTypescriptBoilerplate.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests.a */,
+				5DCACB8F33CDC322A6C60F78 /* libPods-peachmobile.a */,
+				19F6CBCC0A4E27FBF8BF4A61 /* libPods-peachmobile-peachmobileTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,7 +165,6 @@
 				1588EA3539B44A3698D9C91D /* Montserrat-ThinItalic.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -178,9 +177,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* RNTypescriptBoilerplate */,
+				13B07FAE1A68108700A75B9A /* peachmobile */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* RNTypescriptBoilerplateTests */,
+				00E356EF1AD99517003FC87E /* peachmobileTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -194,8 +193,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* RNTypescriptBoilerplate.app */,
-				00E356EE1AD99517003FC87E /* RNTypescriptBoilerplateTests.xctest */,
+				13B07F961A680F5B00A75B9A /* peachmobile.app */,
+				00E356EE1AD99517003FC87E /* peachmobileTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,10 +202,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-RNTypescriptBoilerplate.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-RNTypescriptBoilerplate.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests.release.xcconfig */,
+				3B4392A12AC88292D35C810B /* Pods-peachmobile.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-peachmobile.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-peachmobile-peachmobileTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-peachmobile-peachmobileTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -214,9 +213,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* RNTypescriptBoilerplateTests */ = {
+		00E356ED1AD99517003FC87E /* peachmobileTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RNTypescriptBoilerplateTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "peachmobileTests" */;
 			buildPhases = (
 				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -230,14 +229,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = RNTypescriptBoilerplateTests;
-			productName = RNTypescriptBoilerplateTests;
-			productReference = 00E356EE1AD99517003FC87E /* RNTypescriptBoilerplateTests.xctest */;
+			name = peachmobileTests;
+			productName = peachmobileTests;
+			productReference = 00E356EE1AD99517003FC87E /* peachmobileTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* RNTypescriptBoilerplate */ = {
+		13B07F861A680F5B00A75B9A /* peachmobile */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RNTypescriptBoilerplate" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "peachmobile" */;
 			buildPhases = (
 				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -252,9 +251,9 @@
 			);
 			dependencies = (
 			);
-			name = RNTypescriptBoilerplate;
-			productName = RNTypescriptBoilerplate;
-			productReference = 13B07F961A680F5B00A75B9A /* RNTypescriptBoilerplate.app */;
+			name = peachmobile;
+			productName = peachmobile;
+			productReference = 13B07F961A680F5B00A75B9A /* peachmobile.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -263,7 +262,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1210;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -274,7 +273,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RNTypescriptBoilerplate" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "peachmobile" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -287,8 +286,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* RNTypescriptBoilerplate */,
-				00E356ED1AD99517003FC87E /* RNTypescriptBoilerplateTests */,
+				13B07F861A680F5B00A75B9A /* peachmobile */,
+				00E356ED1AD99517003FC87E /* peachmobileTests */,
 			);
 		};
 /* End PBXProject section */
@@ -353,15 +352,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNTypescriptBoilerplate/Pods-RNTypescriptBoilerplate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-peachmobile/Pods-peachmobile-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNTypescriptBoilerplate/Pods-RNTypescriptBoilerplate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-peachmobile/Pods-peachmobile-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNTypescriptBoilerplate/Pods-RNTypescriptBoilerplate-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-peachmobile/Pods-peachmobile-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
@@ -379,7 +378,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-peachmobile-peachmobileTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -401,7 +400,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RNTypescriptBoilerplate-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-peachmobile-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -414,15 +413,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests/Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-peachmobile-peachmobileTests/Pods-peachmobile-peachmobileTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests/Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-peachmobile-peachmobileTests/Pods-peachmobile-peachmobileTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests/Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-peachmobile-peachmobileTests/Pods-peachmobile-peachmobileTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
@@ -431,15 +430,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNTypescriptBoilerplate/Pods-RNTypescriptBoilerplate-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-peachmobile/Pods-peachmobile-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNTypescriptBoilerplate/Pods-RNTypescriptBoilerplate-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-peachmobile/Pods-peachmobile-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNTypescriptBoilerplate/Pods-RNTypescriptBoilerplate-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-peachmobile/Pods-peachmobile-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
@@ -448,15 +447,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests/Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-peachmobile-peachmobileTests/Pods-peachmobile-peachmobileTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests/Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-peachmobile-peachmobileTests/Pods-peachmobile-peachmobileTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests/Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-peachmobile-peachmobileTests/Pods-peachmobile-peachmobileTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -485,7 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* RNTypescriptBoilerplateTests.m in Sources */,
+				00E356F31AD99517003FC87E /* peachmobileTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,7 +502,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* RNTypescriptBoilerplate */;
+			target = 13B07F861A680F5B00A75B9A /* peachmobile */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -511,14 +510,15 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests.debug.xcconfig */;
+			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-peachmobile-peachmobileTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = RNTypescriptBoilerplateTests/Info.plist;
+				INFOPLIST_FILE = peachmobileTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -532,17 +532,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNTypescriptBoilerplate.app/RNTypescriptBoilerplate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/peachmobile.app/peachmobile";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests.release.xcconfig */;
+			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-peachmobile-peachmobileTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = RNTypescriptBoilerplateTests/Info.plist;
+				INFOPLIST_FILE = peachmobileTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -556,19 +557,20 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNTypescriptBoilerplate.app/RNTypescriptBoilerplate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/peachmobile.app/peachmobile";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-RNTypescriptBoilerplate.debug.xcconfig */;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-peachmobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = RNTypescriptBoilerplate/Info.plist;
+				INFOPLIST_FILE = peachmobile/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "peach-mobile";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -579,7 +581,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = RNTypescriptBoilerplate;
+				PRODUCT_NAME = peachmobile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -588,12 +590,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-RNTypescriptBoilerplate.release.xcconfig */;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-peachmobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = RNTypescriptBoilerplate/Info.plist;
+				INFOPLIST_FILE = peachmobile/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "peach-mobile";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -604,7 +607,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = RNTypescriptBoilerplate;
+				PRODUCT_NAME = peachmobile;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -750,7 +753,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RNTypescriptBoilerplateTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "peachmobileTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -759,7 +762,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RNTypescriptBoilerplate" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "peachmobile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -768,7 +771,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RNTypescriptBoilerplate" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "peachmobile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

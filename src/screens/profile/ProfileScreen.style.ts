@@ -3,6 +3,8 @@ import { ViewStyle, StyleSheet } from "react-native";
 
 interface Style {
   container: ViewStyle;
+  button: ViewStyle;
+  buttonText: ViewStyle;
 }
 
 export default (theme: ExtendedTheme) => {
@@ -13,6 +15,16 @@ export default (theme: ExtendedTheme) => {
       backgroundColor: colors.background,
       alignItems: "center",
       justifyContent: "center",
+    },
+    button: {
+      backgroundColor: "blue",
+      padding: 15,
+      width: "100%",
+    },
+    buttonText: {
+      color: "white",
+      textAlign: "center",
+      fontWeight: "bold",
     },
   });
 };
