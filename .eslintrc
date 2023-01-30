@@ -51,11 +51,26 @@
         "import/prefer-default-export": "off", // Named export is easier to refactor automatically
         "simple-import-sort/imports": "error", // Import configuration for `eslint-plugin-simple-import-sort`
         "simple-import-sort/exports": "error", // Export configuration for `eslint-plugin-simple-import-sort`
+        "import/no-extraneous-dependencies": [
+          "error",
+          {
+            "devDependencies": ["test/**"],
+            "optionalDependencies": false,
+            "peerDependencies": false
+          }
+        ],
         "@typescript-eslint/no-unused-vars": "off",
         "unused-imports/no-unused-imports": "error",
         "unused-imports/no-unused-vars": [
           "error",
           { "argsIgnorePattern": "^_" }
+        ],
+        "no-param-reassign": [
+          "error",
+          {
+            "props": true,
+            "ignorePropertyModificationsFor": ["state"]
+          }
         ]
       }
     },
