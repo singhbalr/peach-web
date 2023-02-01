@@ -54,38 +54,59 @@ const LoginForm: React.FC<Props> = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div className="grid grid-cols-2 gap-4">
       <div>
-        <label htmlFor="username">Email:</label>
-        <input
-          type="text"
-          id="username"
-          value={username}
-          onChange={(event) => setUsernameVal(event.target.value)}
-        />
-        {usernameError && <p style={{ color: 'red' }}>{usernameError}</p>}
+        <form onSubmit={handleSubmit} >
+        <div>
+          <h4 style={{ color: '#E16B8C'}}>Login</h4>
+          <p style={{ color: '#E16B8C'}}>login to your account</p>
+          <p style={{ color: '#E16B8C'}}>Bali, Indonesia</p>
+        </div>
+        <div className="flex items-center border-b border-pink-500 py-2">
+          <input
+            className="appearance-none bg-transparent border-none w-full placeholder-pink-500 text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"  
+            placeholder="Email" 
+            type="text"
+            id="username"
+            value={username}
+            onChange={(event) => setUsernameVal(event.target.value)}
+          />
+          {usernameError && <p style={{ color: 'red' }}>{usernameError}</p>}
+        </div>
+        <div className="flex items-center border-b border-pink-500 py-2">
+          <input
+            className="appearance-none bg-transparent border-none w-full placeholder-pink-500 text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"  
+            placeholder="Password" 
+            type="password"
+            id="password"
+            value={password}
+            onChange={(event) => setPasswordVal(event.target.value)}
+          />
+          {passwordError && <p style={{ color: 'red' }}>{passwordError}</p>}
+        </div>
+        <div>
+          <label htmlFor="rememberMe">Remember me:</label>
+          <input
+            type="checkbox"
+            id="rememberMe"
+            checked={rememberMe}
+            onChange={(event) => setRememberMe(event.target.checked)}
+          />
+        </div>
+        <button 
+          className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-full" 
+          type="submit" 
+          style={{ color: '#ffffff'}}
+          >Login</button>
+
+        <p><small><strong>Don’t have an account ? </strong> <strong style={{ color: '#E16B8C'}}>Sign Up </strong> </small></p>
+        </form>
       </div>
-      <div>
-        <label htmlFor="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          value={password}
-          onChange={(event) => setPasswordVal(event.target.value)}
-        />
-        {passwordError && <p style={{ color: 'red' }}>{passwordError}</p>}
+      <div style={ {backgroundColor: "#F596AA"}}>
+        
       </div>
-      <div>
-        <label htmlFor="rememberMe">Remember me:</label>
-        <input
-          type="checkbox"
-          id="rememberMe"
-          checked={rememberMe}
-          onChange={(event) => setRememberMe(event.target.checked)}
-        />
-      </div>
-      <button type="submit">Login</button>
-    </form>
+    
+    </div>
   );
 };
 
