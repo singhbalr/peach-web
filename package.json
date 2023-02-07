@@ -21,12 +21,14 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.10",
     "@reduxjs/toolkit": "^1.9.2",
     "next": "^13.1.2",
     "next-seo": "^5.15.0",
     "next-sitemap": "^3.1.45",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
     "react-redux": "^8.0.5",
     "redux-persist": "^6.0.0",
     "redux-thunk": "^2.4.2"
