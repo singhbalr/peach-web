@@ -1,8 +1,5 @@
-// FIXME: Update this configuration file based on your project information
-
-export const AppConfig = {
-  site_name: 'Starter',
-  title: 'Peach Bioverse',
+export const appConfig = {
+	name: 'Peach Bioverse',
 	description: 'Peach Bioverse Medical Institution',
 	city: 'Hongkong',
 	state: 'Hongkong',
@@ -12,5 +9,4 @@ export const AppConfig = {
 	whatsapp: '0812-8989-8989',
 	email: 'cs@pearch.bio.com',
 	url: process.env.NEXT_PUBLIC_URL,
-  locale: 'en',
 };
