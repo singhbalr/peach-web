@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import Image from 'next/image';
 import { setLoggedInState, setPassword, setUsername } from './rx/reducer';
-import { LoginHeader } from 'components/layouts/LoginHeader';
 
 interface Props {}
 
@@ -55,14 +54,20 @@ const LoginForm: React.FC<Props> = () => {
   };
 
   return (
-    <div>
-       <LoginHeader /> 
-     
-       <div className='mt-32'>
-          <p className='text-2xl font-sans text-center font-semibold'>Login </p>
+    <div className="grid grid-cols-2 gap-4 h-48">
+      <div className='h-screen'>
+        <form onSubmit={handleSubmit} >
+        <div className='mt-32' style={{
+          display: "flex",
+          justifyContent: "center",
+        }}>
+          <Image src="/assets/images/logo.png" alt="logo" width="40" height="40" />
+        </div>
+        <div className='mt-6'>
+          <p className='text-2xl font-sans text-center' style={{ color: '#E16B8C'}}><strong>Login</strong> </p>
         </div>
         <div className='mt-1'>
-          <p className='font-sans text-center font-light'>login to your account </p>
+          <p className='font-sans text-center' style={{ color: '#E16B8C'}}><small>login to your account</small> </p>
         </div>
         <div className='mt-1' style={{
           display: "flex",
@@ -71,13 +76,13 @@ const LoginForm: React.FC<Props> = () => {
         }}>
           <Image src="/assets/images/marker.png" alt="map" width="11" height="12" />
           {"  "}
-          <p className='font-sans font-medium'>
-            Bali, Indonesia
+          <p className='font-sans' style={{ color: '#E16B8C'}}>
+            <small>Bali, Indonesia</small> 
           </p>
         </div>
-        <div className="flex mx-72 border-b border-black py-2">
+        <div className="flex mx-40 border-b border-pink-500 py-2">
           <input
-            className="appearance-none bg-transparent border-none placeholder-black text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"  
+            className="appearance-none bg-transparent border-none placeholder-pink-500 text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"  
             placeholder="Email" 
             type="text"
             id="username"
@@ -86,9 +91,9 @@ const LoginForm: React.FC<Props> = () => {
           />
           {usernameError && <p style={{ color: 'red' }}>{usernameError}</p>}
         </div>
-        <div className="flex mx-72 border-b border-black py-2">
+        <div className="flex mx-40 border-b border-pink-500 py-2">
           <input
-            className="appearance-none bg-transparent border-none placeholder-black text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none "  
+            className="appearance-none bg-transparent border-none placeholder-pink-500 text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"  
             placeholder="Password" 
             type="password"
             id="password"
@@ -97,18 +102,31 @@ const LoginForm: React.FC<Props> = () => {
           />
           {passwordError && <p style={{ color: 'red' }}>{passwordError}</p>}
         </div>
-        <div className='mx-72 mt-1 text-right'> 
-          <label className='font-light'  htmlFor="rememberMe">forgot your password?</label>
+        <div className='mx-40 text-right'> 
+          <label style={{ color: '#E16B8C'}} htmlFor="rememberMe"><small>forgot your password?</small> </label>
+          {/* <input
+            type="checkbox"
+            id="rememberMe"
+            checked={rememberMe}
+            onChange={(event) => setRememberMe(event.target.checked)}
+          /> */}
         </div>
         <div className='text-center mt-12'>
           <button 
-            className="bg-white outline outline-1 outline-gray-400 hover:bg-gray-700 font-semibold py-2 px-4 rounded-full btn w-1/4" 
+            className="bg-pink-500 hover:bg-pink-700 text-white py-2 px-4 rounded-full btn w-1/2" 
             type="submit" 
+            style={{ color: '#ffffff'}}
             >Login</button>
         </div>
        <div className='text-center mt-12'>
-          <p className='-mb-12'><small>Don’t have an account ? <strong >Sign Up </strong> </small></p>
+          <p className='-mb-12'><small>Don’t have an account ? <strong style={{ color: '#E16B8C'}}>Sign Up </strong> </small></p>
        </div>
+        </form>
+      </div>
+      <div className='h-screen' style={ {backgroundColor: "#F596AA"}}>
+        
+      </div>
+    
     </div>
   );
 };

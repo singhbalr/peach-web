@@ -1,13 +1,14 @@
 import React from 'react';
 import {IndexHeader} from '../../../../components/layouts/Header';
+import MainMenu from '../../../../components/menu/MainMenu';
 
 interface Props {}
 
 const Dashboard: React.FC<Props> = () => {
   return (
     <div>
-      <h1>dashboard</h1>
       <IndexHeader />
+      <MainMenu />
     </div>
   );
 };
