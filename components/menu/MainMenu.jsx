@@ -12,9 +12,9 @@ export default function MainMenu() {
               <li>
                 <Link href="/private/dashboard/your-campaign" className="rounded-full hover:bg-pink-200 no-underline py-0.5 px-4 hover:no-underline hover:text-black w-5 h-5 ml-6 text-gray-500 capitalize text-xs">your campaign</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/private/dashboard/imaging" className="rounded-full hover:bg-pink-200 py-0.5 px-4 hover:no-underline hover:text-black w-5 h-5 ml-6 text-gray-500 capitalize text-xs">imaging</Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/private/dashboard/clinical-report" className="rounded-full hover:bg-pink-200 py-0.5 px-4 hover:no-underline hover:text-black w-5 h-5 ml-6 text-gray-500 capitalize text-xs">clinical report</Link>
               </li>
