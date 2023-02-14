@@ -1,12 +1,14 @@
 /* eslint-disable prettier/prettier */
-import React from 'react';
+import React, {useState} from 'react';
 import {IndexHeader} from '../../../../../components/layouts/Header';
 import MainMenu from '../../../../../components/menu/MainMenu';
 import ButtonNew from 'components/button/BtnNew';
+import ReactplosiveModal from "../../../../../components/clinicalModal";
 
 interface Props {}
 
 const Dashboard: React.FC<Props> = () => {
+  const [isModalVisible, setIsModalVisible] = useState(false);
   return (
     <div className='flex h-screen'>
       <div className='flex-1 flex flex-col overflow-hidden'>
@@ -97,7 +99,9 @@ const Dashboard: React.FC<Props> = () => {
                             23-01-01
                           </td>
                           <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                            <a href="/private/dashboard/clinical-report/detail">Request Access</a> 
+                            <button className=' show-modal-button' 
+                            onClick={() => setIsModalVisible(!isModalVisible)}
+                            type="button">request access</button> 
                           </td>
                         </tr>
                       </tbody>
@@ -111,6 +115,25 @@ const Dashboard: React.FC<Props> = () => {
           </div>
         </div>
       </main>
+        <ReactplosiveModal
+          title={<h4>Clinical Report Request</h4>}
+          isVisible={isModalVisible}
+          onClose={() => {
+            setIsModalVisible(false);
+          }}>
+          
+            <div>
+              <label htmlFor="">Summary</label>
+              <textarea  className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg  focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 ark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your thoughts here...">
+                Summary details    
+              </textarea>
+            </div>
+        
+          <button  className="bg-white outline outline-1 outline-gray-400 hover:bg-gray-700 font-bold py-2 px-3 rounded-full btn " 
+                type="submit" >Request Access</button>
+          <button  className="bg-white outline outline-1 outline-gray-400 hover:bg-gray-700 font-bold py-2 px-3 rounded-full btn " 
+                type="submit" >Cancel</button>
+        </ReactplosiveModal>
     </div>
   );
 };
