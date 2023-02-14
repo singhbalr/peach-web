@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
 import {IndexHeader} from '../../../../../components/layouts/Header';
 import MainMenu from '../../../../../components/menu/MainMenu';
@@ -63,62 +64,62 @@ const Dashboard: React.FC<Props> = () => {
             </div>
             <div className="flex flex-col">
             <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-    <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
-      <div className="overflow-x-auto">
-        <table className="min-w-full">
-          <thead className="border-b  bg-gray-200">
-            <tr>
-              <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
-                No
-              </th>
-              <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
-                Status
-              </th>
-              <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
-                Report
-              </th>
-              <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
-                Data Requested
-              </th>
-              <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
-                Hospital
-              </th>
-              <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
-                Date
-              </th>
-              <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
-                
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="border-b">
-              <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1</td>
-              <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Waiting fr approval
-              </td>
-              <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Eyes
-              </td>
-              <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                2
-              </td>
-              <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                RS Jiwa
-              </td>
-              <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                23-01-01
-              </td>
-              <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                details
-              </td>
-            </tr>
-          
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
+              <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+                  <div className="overflow-x-auto">
+                    <table className="min-w-full">
+                      <thead className="border-b  bg-gray-200">
+                        <tr>
+                          <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                            No
+                          </th>
+                          <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                            Status
+                          </th>
+                          <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                            Report
+                          </th>
+                          <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                            Data Requested
+                          </th>
+                          <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                            Hospital
+                          </th>
+                          <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                            Date
+                          </th>
+                          <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                            
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b">
+                          <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1</td>
+                          <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Waiting fr approval
+                          </td>
+                          <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Eyes
+                          </td>
+                          <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            2
+                          </td>
+                          <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            RS Jiwa
+                          </td>
+                          <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            23-01-01
+                          </td>
+                          <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            <a href="/private/dashboard/clinical-report/detail">details</a> 
+                          </td>
+                        </tr>
+                      
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
             </div>
            
             
