@@ -13,7 +13,7 @@ const RouteHandler: React.FC<Props> = () => {
     if (!isLoggedIn) {
       Router.push('/public/login');
     } else {
-      Router.push('/private/dashboard');
+      Router.push('/private/dashboard/your-campaign');
     }
   }, [isLoggedIn]);
 };

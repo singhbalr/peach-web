@@ -1,6 +1,3 @@
-export const accountRoute = {
-	index: '/account',
-};
 
 export const authRoute = {
 	login: '/auth/login',

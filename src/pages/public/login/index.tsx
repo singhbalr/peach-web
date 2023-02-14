@@ -55,60 +55,62 @@ const LoginForm: React.FC<Props> = () => {
   };
 
   return (
-    <div>
+    <div className='flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0'>
        <LoginHeader /> 
-     
-       <div className='mt-32'>
-          <p className='text-2xl font-sans text-center font-semibold'>Login </p>
-        </div>
-        <div className='mt-1'>
-          <p className='font-sans text-center font-light'>login to your account </p>
-        </div>
-        <div className='mt-1' style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}>
-          <Image src="/assets/images/marker.png" alt="map" width="11" height="12" />
-          {"  "}
-          <p className='font-sans font-medium'>
-            Bali, Indonesia
-          </p>
-        </div>
-        <div className="flex mx-72 border-b border-black py-2">
-          <input
-            className="appearance-none bg-transparent border-none placeholder-black text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"  
-            placeholder="Email" 
-            type="text"
-            id="username"
-            value={username}
-            onChange={(event) => setUsernameVal(event.target.value)}
-          />
-          {usernameError && <p style={{ color: 'red' }}>{usernameError}</p>}
-        </div>
-        <div className="flex mx-72 border-b border-black py-2">
-          <input
-            className="appearance-none bg-transparent border-none placeholder-black text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none "  
-            placeholder="Password" 
-            type="password"
-            id="password"
-            value={password}
-            onChange={(event) => setPasswordVal(event.target.value)}
-          />
-          {passwordError && <p style={{ color: 'red' }}>{passwordError}</p>}
-        </div>
-        <div className='mx-72 mt-1 text-right'> 
-          <label className='font-light'  htmlFor="rememberMe">forgot your password?</label>
-        </div>
+          <div className='mt-32'>
+            <p className='text-2xl font-sans text-center font-semibold'>Login </p>
+          </div>
+          <div className='mt-1'>
+            <p className='font-sans text-center font-light text-sm'>login to your account </p>
+          </div>
+          <div className='mt-1' style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}>
+            <Image src="/assets/images/marker.png" alt="map" width="11" height="12" />
+            {"  "}
+            <p className='font-sans font-medium'>
+              Bali, Indonesia
+            </p>
+          </div>
+          <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+            <div className="flex mx-10 border-b border-black py-2 mt-6">
+              <input
+                className="appearance-none bg-transparent border-none placeholder-black text-gray-700  leading-tight focus:outline-none"  
+                placeholder="Email" 
+                type="text"
+                id="username"
+                value={username}
+                onChange={(event) => setUsernameVal(event.target.value)}
+              />
+              {usernameError && <p style={{ color: 'red' }}>{usernameError}</p>}
+            </div>
+            <div className="flex mx-10 border-b border-black py-2 mt-6">
+              <input
+                className="appearance-none bg-transparent border-none placeholder-black text-gray-700  leading-tight focus:outline-none "  
+                placeholder="Password" 
+                type="password"
+                id="password"
+                value={password}
+                onChange={(event) => setPasswordVal(event.target.value)}
+              />
+              {passwordError && <p style={{ color: 'red' }}>{passwordError}</p>}
+            </div>
+            <div className='mx-10 mt-1 text-right mt-2 mb-4'> 
+              <label className='font-light text-sm'  htmlFor="rememberMe">forgot your password?</label>
+            </div>
+          </div>
+          <div className='text-center mt-12'>
+            <button 
+              className="bg-white outline outline-1 outline-gray-400 hover:bg-gray-700 font-bold py-2 px-52 rounded-full btn " 
+              type="submit" 
+              >Login
+            </button>
+          </div>
         <div className='text-center mt-12'>
-          <button 
-            className="bg-white outline outline-1 outline-gray-400 hover:bg-gray-700 font-semibold py-2 px-4 rounded-full btn w-1/4" 
-            type="submit" 
-            >Login</button>
+            <p className='-mb-12'><small>Don’t have an account ? <strong >Sign Up </strong> </small></p>
         </div>
-       <div className='text-center mt-12'>
-          <p className='-mb-12'><small>Don’t have an account ? <strong >Sign Up </strong> </small></p>
-       </div>
     </div>
   );
 };

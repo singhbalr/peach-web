@@ -2,30 +2,26 @@ import Link from 'next/link'
 
 export default function MainMenu() {
 	return (
-    <section className="mt-24">
-      <ul>
-        <li>
-          <Link href="/" className="w-5 h-5 mt-8 ml-8">Your Bioverse</Link>
-        </li>
-        <li>
-          <Link href="/about" className="w-5 h-5 ml-8">Your Campaign</Link>
-        </li>
-        <li>
-          <Link href="/blog/hello-world" className="w-5 h-5 ml-8">Imaging</Link>
-        </li>
-        <li>
-          <Link href="/blog/hello-world" className="w-5 h-5 ml-8">Clinical Report</Link>
-        </li>
-      </ul>
-    </section>
+    <nav class="flex w-48 h-full">
+      <div class="w-full flex mx-auto px-1 py-8">
+        <div class="w-full flex items-start text-gray-900 text-xl border-gray-900">
+            <ul className='py-16'>
+              <li>
+                <Link href="/private/dashboard/your-bioverse" className="rounded-full hover:bg-gray-200 py-0.5 px-4 hover:no-underline hover:text-black w-5 h-5 mt-8 ml-6 text-gray-500 capitalize text-xs">your bioverse</Link>
+              </li>
+              <li>
+                <Link href="/private/dashboard/your-campaign" className="rounded-full hover:bg-gray-200 no-underline py-0.5 px-4 hover:no-underline hover:text-black w-5 h-5 ml-6 text-gray-500 capitalize text-xs">your campaign</Link>
+              </li>
+              <li>
+                <Link href="/private/dashboard/imaging" className="rounded-full hover:bg-gray-200 py-0.5 px-4 hover:no-underline hover:text-black w-5 h-5 ml-6 text-gray-500 capitalize text-xs">imaging</Link>
+              </li>
+              <li>
+                <Link href="/private/dashboard/clinical-report" className="rounded-full hover:bg-gray-200 py-0.5 px-4 hover:no-underline hover:text-black w-5 h-5 ml-6 text-gray-500 capitalize text-xs">clinical report</Link>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
    
-		// <section className="mt-5">
-		// 	<div className="grid grid-cols-3 gap-5 w-full">
-		// 		<IconMenu title="Your Bioverse" href="#"  />
-		// 		<IconMenu title="Your Campaign" href="#"  />
-		// 		<IconMenu title="Imaging" href="#"  />
-		// 		<IconMenu title="Clinical Report" href="#"  />
-		// 	</div>
-		// </section>
 	);
 }

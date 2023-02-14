@@ -20,17 +20,29 @@ export function IndexHeader() {
 
 					<div className="flex items-center gap-3">
             <div className='relative'>
-              <span className="absolute right-36 -top-1 flex items-center w-12 h-4 text-black border-gray-50 text-[10px] rounded-full ring-black ring-1">English</span>
+              <button className="absolute 
+                right-36 
+                -top-1 
+                items-center 
+                w-12 
+                h-4 
+                border-gray-50 
+                text-[10px] 
+                rounded-full 
+                ring-black
+                ring-1">
+                English
+                </button>
             </div>
             <div className="relative">
-              <span className="absolute right-16 -top-1 flex items-center w-16 h-4 text-black border-gray-50 text-[14px]">
+              <button className="absolute right-16 -top-1 flex items-center w-16 h-4 text-black border-gray-50 text-[14px]">
                 Settings
-              </span>
+              </button>
             </div>
 						<div className="relative">
-							<span className="absolute -right-1 -top-1 flex items-center w-16 h-4 text-black border-gray-50 text-[14px]">
+							<a href="/public/logout"  className="absolute -right-1 -top-1 flex items-center w-16 h-4 text-black border-gray-50 text-[14px]">
 								Log out
-							</span>
+							</a>
 						</div>
 
 					</div>
