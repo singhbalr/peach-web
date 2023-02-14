@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import {IndexHeader} from '../../../../../components/layouts/Header';
 import MainMenu from '../../../../../components/menu/MainMenu';
 import ReactplosiveModal from "../../../../../components/clinicalModal";
+import ButtonNew from 'components/button/BtnNew';
 
 interface Props {}
 
@@ -23,43 +24,7 @@ const Dashboard: React.FC<Props> = () => {
             <div className="flex w-full space-x-4 max-w-screen-lg  items-start mx-auto ">
                 <p className='font-bold text-lg mt-16'> Select a campaign </p> 
             </div>
-            <div className="flex w-full mt-2 mx-auto ">
-            <input
-                className="
-                rounded-full 
-                ring-gray-500
-                ring-1 
-                py-1
-                px-2
-                w-1/4 
-                placeholder-gray-900
-                focus:ring-gray-200
-                focus:border-gray-500 
-                text-sm
-                "  
-                placeholder="Search a campaign" 
-                type="text"
-                id="search"
-              />
-              <select id="new" className="ml-6 border border-gray-900 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                <option selected value="cev">Newest</option>
-                <option value="old">Oldest</option>
-              </select>
-              <select id="category" className="ml-2 border border-gray-900 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                <option selected value="cev">Covid 19</option>
-                <option value="cv">Head & Neck</option>
-                <option value="cv">Upper Abdomen</option>
-                <option value="cv">Lower Abdomen</option>
-                <option value="cv">Limb</option>
-              </select>
-              <select id="total" className="ml-2 border border-black text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                <option selected value="cev" >total record</option>
-                <option value="US">10</option>
-                <option value="CA">25</option>
-                <option value="FR">50</option>
-                <option value="DE">100</option>
-              </select>
-            </div>
+            <ButtonNew />
 
             <div className="flex w-full h-32 mt-4 mx-auto">
               <div className='flex w-1/2'> 
@@ -102,28 +67,18 @@ const Dashboard: React.FC<Props> = () => {
       </main>
 
       <ReactplosiveModal
-        title={<h4>New Campaign</h4>}
+        title={<h4>Covid-19</h4>}
         isVisible={isModalVisible}
         onClose={() => {
           setIsModalVisible(false);
         }}>
           <div>
-            <label htmlFor="">Type</label>
-            <select id="new" className="ml-6 border border-gray-900 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                <option selected>Select a category</option>
-                <option value="old">Oldest</option>
-              </select>
+            <p>Summary about the campaign here</p>
           </div>
-          <div>
-            <label htmlFor="">Campaign title</label>
-            <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="campaigntitle" type="text"  
-              />
-          </div>
+      
           <div>
             <label htmlFor="">Campaign Description</label>
-            <textarea  className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg  focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 ark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your thoughts here...">
-                </textarea>
+            <p>Description</p>
           </div>
           <div>
             <label htmlFor="">number of data Description</label>
