@@ -14,25 +14,20 @@ export function IndexHeader() {
 				<div className="flex items-center gap-3 justify-between bg-white py-1 -mx-4 px-4">
 					<div className="flex gap-1 items-start">
             <FaBars className='w-5 h-5 right-8 mt-8' />
-						{/* <img src="/assets/images/logo.png" alt="Bioverse Logo" className="h-14" /> */}
 						<span className="bg-brand py-0.5 px-3 text-lg text-black ml-2 mt-6">Your Bioverse</span>
 					</div>
 
 					<div className="flex items-center gap-3">
-            <div className='relative'>
-              <button className="absolute 
-                right-36 
-                -top-1 
-                items-center 
-                w-12 
-                h-4 
-                border-gray-50 
-                text-[10px] 
-                rounded-full 
+          
+             <div className='relative'>
+              <select id="new" className="absolute right-36 -top-2 items-center rounded-full 
                 ring-black
-                ring-1">
-                English
-                </button>
+                ring-1
+                text-xs 
+              text-gray-900  focus:ring-gray-500 focus:border-gray-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option selected>English</option>
+                <option value="old">Oldest</option>
+              </select>
             </div>
             <div className="relative">
               <button className="absolute right-16 -top-1 flex items-center w-16 h-4 text-black border-gray-50 text-[14px]">
