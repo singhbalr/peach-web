@@ -67,39 +67,41 @@ const DashboardYourCampaign: React.FC<Props> = () => {
         </div>
       </main>
       <ReactplosiveModal
-        title={<h4>New Campaign</h4>}
+        title={<h4 className='ml-10 w-1/2'>New Campaign</h4>}
         isVisible={isModalVisible}
         onClose={() => {
           setIsModalVisible(false);
         }}>
-          <div>
-            <label htmlFor="">Type</label>
-            <select id="new" className="ml-6 border border-gray-900 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                <option selected>Select a category</option>
+          <div className='ml-10 w-5/6'>
+            <label htmlFor="">Type :</label>
+            <select id="new" className="border mt-2 border-gray-500 w-full text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white">
+                <option selected>Select a campaign title</option>
                 <option value="old">Oldest</option>
               </select>
           </div>
-          <div>
-            <label htmlFor="">Campaign title</label>
+          <div className='ml-10 w-5/6'>
+            <label htmlFor="">Campaign title :</label>
             <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="campaigntitle" type="text"  
+                className="shadow mt-2 appearance-none border border-gray-500 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="campaigntitle" type="text"  
               />
           </div>
-          <div>
-            <label htmlFor="">Campaign Description</label>
-            <textarea  className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg  focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 ark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your thoughts here...">
+          <div className='ml-10 w-5/6'>
+            <label htmlFor="">Campaign Description :</label>
+            <textarea  className="block mt-2 p-2.5 w-full text-sm border border-gray-500 text-gray-900 bg-gray-50 rounded-lg  focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" >
                 </textarea>
           </div>
-          <div>
-            <label htmlFor="">number of data Description</label>
-            <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="number"  
+          <div className='ml-10 w-1/2'>
+            <label>number of data needed :</label>
+          </div>
+          <div className='ml-10 w-1/3'>
+          <input
+                className="shadow appearance-none mt-2 border border-gray-500 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="number"  
               />
           </div>
       
-        <button  className="bg-white outline outline-1 outline-gray-400 hover:bg-gray-700 font-bold py-2 px-3 rounded-full btn " 
+        <button  className="bg-pink-500 mt-6 ml-16 text-white font-bold py-2 px-3 w-1/3 rounded-full btn" 
               type="submit" >Create</button>
-        <button  className="bg-white outline outline-1 outline-gray-400 hover:bg-gray-700 font-bold py-2 px-3 rounded-full btn " 
+        <button  className="bg-white mt-6 ml-4 outline outline-1 outline-pink-500 font-bold py-2 px-3 w-1/3 rounded-full btn" 
               type="submit" >Cancel</button>
       </ReactplosiveModal>
     </div>

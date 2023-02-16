@@ -3,7 +3,6 @@ import { useRouter } from 'next/dist/client/router';
 import { useEffect, useState } from 'react';
 import { FaArrowLeft, FaBars, FaEllipsisH, FaHome, FaQrcode, FaSearch, FaUserAlt, FaWallet, FaBell, FaQuestionCircle  } from 'react-icons/fa';
 import { HiX } from 'react-icons/hi';
-import { accountRoute, walletRoute } from '../../configs/routes';
 import { Link } from '../button/Link';
 import Container from './Container';
 
@@ -189,20 +188,7 @@ export function BottomHeaderMenu() {
 		<div className="text-gray-400 fixed inset-x-0 bottom-0 z-30 bg-white border-t">
 			<Container>
 				<div className="flex justify-between gap-2 items-center">
-					<MobileNav title="Home" Icon={FaHome} href="/" />
-					<MobileNav title="Account" Icon={FaUserAlt} href={accountRoute.index} />
-					<Link
-						href={walletRoute.scan}
-						className={`py-1 w-20 h-20 px-1 flex flex-col flex-shrink-0 justify-center items-center text-[.6rem] bg-white rounded-full -mt-10 -mx-3 shadow-lg border ${
-							router.pathname.includes(walletRoute.scan) ? 'text-brand' : ''
-						}`}
-						title="SCAN"
-					>
-						<FaQrcode className="h-8 w-8 flex-shrink-0" />
-						{/* <div className="mt-0.5">SCAN</div> */}
-					</Link>
-					<MobileNav title="Wallet" Icon={FaWallet} href={walletRoute.index} />
-					<MobileNav title="More" Icon={FaEllipsisH} href="/more" />
+					
 				</div>
 			</Container>
 		</div>

@@ -67,29 +67,29 @@ const Dashboard: React.FC<Props> = () => {
       </main>
 
       <ReactplosiveModal
-        title={<h4>Covid-19</h4>}
+        title={<h4  className='ml-10 w-5/6'>Covid-19</h4>}
         isVisible={isModalVisible}
         onClose={() => {
           setIsModalVisible(false);
         }}>
-          <div>
+          <div className='ml-10 w-5/6'>
             <p>Summary about the campaign here</p>
           </div>
       
-          <div>
-            <label htmlFor="">Campaign Description</label>
-            <p>Description</p>
+          <div className='ml-10 w-5/6'>
+            <label htmlFor="">Description : </label>
+            <p className='text-center mt-12 mb-12'>Campaign Description</p>
           </div>
-          <div>
-            <label htmlFor="">number of data Description</label>
+          <div className='ml-10 w-full'>
+            <label>number of data needed :</label>
             <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="number"  
+                className="shadow ml-2 appearance-none mt-2 border border-gray-500 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" rounded-full type="number"  
               />
           </div>
       
-        <button  className="bg-white outline outline-1 outline-gray-400 hover:bg-gray-700 font-bold py-2 px-3 rounded-full btn " 
+          <button  className="bg-pink-500 mt-6 ml-16 text-white font-bold py-2 px-3 w-1/3 rounded-full btn" 
               type="submit" >Create</button>
-        <button  className="bg-white outline outline-1 outline-gray-400 hover:bg-gray-700 font-bold py-2 px-3 rounded-full btn " 
+        <button  className="bg-white mt-6 ml-4 outline outline-1 outline-pink-500 font-bold py-2 px-3 w-1/3 rounded-full btn" 
               type="submit" >Cancel</button>
       </ReactplosiveModal>
     </div>
