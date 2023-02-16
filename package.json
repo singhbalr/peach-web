@@ -23,7 +23,6 @@
   "dependencies": {
     "@headlessui/react": "^1.7.10",
     "@reduxjs/toolkit": "^1.9.2",
-    "fs": "0.0.1-security",
     "next": "^13.1.2",
     "next-seo": "^5.15.0",
     "next-sitemap": "^3.1.45",
