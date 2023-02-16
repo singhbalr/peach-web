@@ -1,8 +1,9 @@
+import Image from 'next/image';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import Image from 'next/image';
+
 import { setLoggedInState, setPassword, setUsername } from './rx/reducer';
-import { LoginHeader } from 'components/layouts/LoginHeader';
+import styles from './styles.module.scss';
 
 interface Props {}
 
@@ -55,62 +56,69 @@ const LoginForm: React.FC<Props> = () => {
   };
 
   return (
-    <div className='flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0'>
-       <LoginHeader /> 
-          <div className='mt-32'>
-            <p className='text-2xl font-sans text-center font-semibold'>Login </p>
-          </div>
-          <div className='mt-1'>
-            <p className='font-sans text-center font-light text-sm'>login to your account </p>
-          </div>
-          <div className='mt-1' style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}>
-            <Image src="/assets/images/marker.png" alt="map" width="11" height="12" />
-            {"  "}
-            <p className='font-sans font-medium'>
-              Bali, Indonesia
-            </p>
-          </div>
-          <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
-            <div className="flex mx-10 border-b border-black py-2 mt-6">
-              <input
-                className="appearance-none bg-transparent border-none placeholder-black text-gray-700  leading-tight focus:outline-none"  
-                placeholder="Email" 
-                type="text"
-                id="username"
-                value={username}
-                onChange={(event) => setUsernameVal(event.target.value)}
-              />
-              {usernameError && <p style={{ color: 'red' }}>{usernameError}</p>}
-            </div>
-            <div className="flex mx-10 border-b border-black py-2 mt-6">
-              <input
-                className="appearance-none bg-transparent border-none placeholder-black text-gray-700  leading-tight focus:outline-none "  
-                placeholder="Password" 
-                type="password"
-                id="password"
-                value={password}
-                onChange={(event) => setPasswordVal(event.target.value)}
-              />
-              {passwordError && <p style={{ color: 'red' }}>{passwordError}</p>}
-            </div>
-            <div className='mx-10 mt-1 text-right mt-2 mb-4'> 
-              <label className='font-light text-sm'  htmlFor="rememberMe">forgot your password?</label>
-            </div>
-          </div>
-          <div className='text-center mt-12'>
-            <button 
-              className="bg-white outline outline-1 outline-gray-400 hover:bg-gray-700 font-bold py-2 px-52 rounded-full btn " 
-              type="submit" 
-              >Login
-            </button>
-          </div>
-        <div className='text-center mt-12'>
-            <p className='-mb-12'><small>Don’t have an account ? <strong >Sign Up </strong> </small></p>
+    <div>
+      <div className={styles.login_container}>
+        <p className={styles.login_title}>Login </p>
+        <p className={styles.login_description}>login to your account </p>
+        <div
+          className={styles.location}
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <Image
+            className={styles.location_img}
+            src="/assets/images/marker.png"
+            alt="map"
+            width="11"
+            height="12"
+          />
+          <p className="font-sans font-medium">Bali, Indonesia</p>
         </div>
+        <div className={styles.login_wrapper}>
+          <input
+            className={styles.email}
+            placeholder="Email"
+            type="text"
+            id="username"
+            value={username}
+            onChange={(event) => setUsernameVal(event.target.value)}
+          />
+          {/* {usernameError && <p style={{ color: 'red' }}>{usernameError}</p>} */}
+          <input
+            className={styles.password}
+            placeholder="Password"
+            type="password"
+            id="password"
+            value={password}
+            onChange={(event) => setPasswordVal(event.target.value)}
+          />
+          {/* {passwordError && <p style={{ color: 'red' }}>{passwordError}</p>} */}
+
+          <p className={styles.forgot_password} htmlFor="rememberMe">
+            forgot your password?
+          </p>
+        </div>
+        <a className={styles.button_login} type="submit">
+          Login
+        </a>
+        <p className={styles.description}>
+          Don’t have an account ?{'  '}
+          <a className={styles.button_signup}>Sign Up </a>
+        </p>
+      </div>
+      <div className={styles.footer}>
+        <div className={styles.bottom_line}></div>
+        <Image
+          className={styles.peach_img}
+          src="/assets/images/logo-peach.svg"
+          alt="peach bioverse logo"
+          width="826"
+          height="111"
+        />
+      </div>
     </div>
   );
 };
