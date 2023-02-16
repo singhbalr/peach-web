@@ -8,7 +8,7 @@ import ReactplosiveModal from "../../../../../components/clinicalModal";
 interface Props {}
 
 const Dashboard: React.FC<Props> = () => {
-  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isModalVisible, setIsModalVisible] = useState(false); 
   return (
     <div className='flex h-screen'>
       <div className='flex-1 flex flex-col overflow-hidden'>
@@ -116,23 +116,20 @@ const Dashboard: React.FC<Props> = () => {
         </div>
       </main>
         <ReactplosiveModal
-          title={<h4>Clinical Report Request</h4>}
+          title={<h4 className='ml-10 w-5/6'>Clinical Report Request</h4>}
           isVisible={isModalVisible}
           onClose={() => {
             setIsModalVisible(false);
           }}>
           
-            <div>
-              <label htmlFor="">Summary</label>
-              <textarea  className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg  focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 ark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your thoughts here...">
-                Summary details    
-              </textarea>
-            </div>
-        
-          <button  className="bg-white outline outline-1 outline-gray-400 hover:bg-gray-700 font-bold py-2 px-3 rounded-full btn " 
-                type="submit" >Request Access</button>
-          <button  className="bg-white outline outline-1 outline-gray-400 hover:bg-gray-700 font-bold py-2 px-3 rounded-full btn " 
-                type="submit" >Cancel</button>
+          <div className='ml-10 w-5/6'>
+            <label htmlFor="">Summary : </label>
+            <p className='text-center mt-12 mb-12'>Summary Details</p>
+          </div>
+            <button  className="bg-pink-500 mt-6 ml-16 text-white font-bold py-2 px-3 w-1/3 rounded-full btn" 
+              type="submit" >Request Access</button>
+            <button  className="bg-white mt-6 ml-4 outline outline-1 outline-pink-500 font-bold py-2 px-3 w-1/3 rounded-full btn"
+           onClick={() => setIsModalVisible(!isModalVisible)} >Cancel</button>
         </ReactplosiveModal>
     </div>
   );
