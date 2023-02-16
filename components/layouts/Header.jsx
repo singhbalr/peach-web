@@ -5,8 +5,12 @@ import { FaArrowLeft, FaBars, FaEllipsisH, FaHome, FaQrcode, FaSearch, FaUserAlt
 import { HiX } from 'react-icons/hi';
 import { Link } from '../button/Link';
 import Container from './Container';
+import Router from 'next/router';
+import { useLogout } from "../../src/hooks/auth/useLogout";
+
 
 export function IndexHeader() {
+  const { logout } = useLogout();
 	return (
 		<div className="text-brand fixed inset-x-0 left-0 top-0 z-30 mb-2">
 			<Container>
@@ -34,9 +38,12 @@ export function IndexHeader() {
               </button>
             </div>
 						<div className="relative">
-							<a href="/public/logout"  className="absolute -right-1 -top-1 flex items-center w-16 h-4 text-black border-gray-50 text-[14px]">
+							<button onClick={() => {
+                  logout();
+                  Router.push("/public/login");
+                }}  className="absolute -right-1 -top-1 flex items-center w-16 h-4 text-black border-gray-50 text-[14px]">
 								Log out
-							</a>
+							</button>
 						</div>
 
 					</div>
