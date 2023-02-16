@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-
+import { useLogin } from "../../../hooks/auth/useLogin";
 import { setLoggedInState, setPassword, setUsername } from './rx/reducer';
 import styles from './styles.module.scss';
-
+import Router from 'next/router';
 interface Props {}
 
 const LoginForm: React.FC<Props> = () => {
@@ -24,36 +24,49 @@ const LoginForm: React.FC<Props> = () => {
   const validatePassword = (value: string) => {
     return value.length >= 8;
   };
-  const onSubmit = (
-    _username: string,
-    _password: string,
-    _rememberMe: boolean
-  ) => {
-    dispatch(setUsername(username));
-    dispatch(setPassword(password));
-    dispatch(setLoggedInState(true));
-  };
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    console.log('Clicked submit');
-    const isUsernameValid = validateUsername(username);
-    const isPasswordValid = validatePassword(password);
 
-    if (isUsernameValid && isPasswordValid) {
-      setUsernameError('');
-      setPasswordError('');
-      onSubmit(username, password, rememberMe);
+  const { login } = useLogin();
+
+  const onSubmit = () => {
+    if (!username || !password) {
+      Router.push('/public/login');
+      alert("Please enter information");
     } else {
-      if (!isUsernameValid) {
-        setUsernameError('Invalid email address');
-        console.log('Invalid email address');
-      }
-      if (!isPasswordValid) {
-        setPasswordError('Password must be at least 8 characters long');
-        console.log('Invalid email address');
-      }
+      login(username, password)
+        .then((res) => Router.push("/private/dashboard/your-bioverse/"))
+        .catch((e) => alert(e));
     }
   };
+  // const onSubmit = (
+  //   _username: string,
+  //   _password: string,
+  //   _rememberMe: boolean
+  // ) => {
+  //   dispatch(setUsername(username));
+  //   dispatch(setPassword(password));
+  //   dispatch(setLoggedInState(true));
+  // };
+  // const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  //   event.preventDefault();
+  //   console.log('Clicked submit');
+  //   const isUsernameValid = validateUsername(username);
+  //   const isPasswordValid = validatePassword(password);
+
+  //   if (isUsernameValid && isPasswordValid) {
+  //     setUsernameError('');
+  //     setPasswordError('');
+  //     onSubmit(username, password, rememberMe);
+  //   } else {
+  //     if (!isUsernameValid) {
+  //       setUsernameError('Invalid email address');
+  //       console.log('Invalid email address');
+  //     }
+  //     if (!isPasswordValid) {
+  //       setPasswordError('Password must be at least 8 characters long');
+  //       console.log('Invalid email address');
+  //     }
+  //   }
+  // };
 
   return (
     <div>
@@ -101,9 +114,9 @@ const LoginForm: React.FC<Props> = () => {
             forgot your password?
           </p>
         </div>
-        <a className={styles.button_login} type="submit">
+        <button className={styles.button_login}  onClick={onSubmit} >
           Login
-        </a>
+        </button>
         <p className={styles.description}>
           Don’t have an account ?{'  '}
           <a className={styles.button_signup}>Sign Up </a>

@@ -8,14 +8,14 @@ import type { RootState } from '@/redux/store';
 interface Props {}
 
 const RouteHandler: React.FC<Props> = () => {
-  const isLoggedIn = useSelector((state: RootState) => state.auth.isLoggedIn);
-  useEffect(() => {
-    if (!isLoggedIn) {
-      Router.push('/public/login');
-    } else {
-      Router.push('/private/dashboard/your-campaign');
-    }
-  }, [isLoggedIn]);
+  // const isLoggedIn = useSelector((state: RootState) => state.auth.isLoggedIn);
+  // useEffect(() => {
+  //   if (!isLoggedIn) {
+  //     Router.push('/public/login');
+  //   } else {
+  //     Router.push('/private/dashboard/your-campaign');
+  //   }
+  // }, [isLoggedIn]);
 };
 
 export default RouteHandler;

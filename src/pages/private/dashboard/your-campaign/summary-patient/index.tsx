@@ -62,7 +62,7 @@ const CampaignDetail: React.FC<Props> = () => {
                         <tr className="border-b">
                           <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1</td>
                           <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                            Waiting fr approval
+                            approved
                           </td>
                           <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                             Eyes
