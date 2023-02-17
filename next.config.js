@@ -4,6 +4,15 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 });
 
 module.exports = withBundleAnalyzer({
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/public/login',
+        permanent: true,
+      },
+    ]
+  },
   eslint: {
     dirs: ['.'],
     ignoreDuringBuilds: true,
